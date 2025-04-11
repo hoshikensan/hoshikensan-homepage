@@ -70,6 +70,78 @@ section h2 {
   text-align: left;
 }
 
+/* メニューアイコン */
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  color: white;
+  padding: 10px;
+}
+
+/* チェックボックスを非表示に */
+#menu-toggle {
+  display: none;
+}
+
+/* メニューバー全体 */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  background-color: #00bcd4;
+}
+
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-menu li {
+  margin: 10px 15px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #ff4081;
+}
+
+/* モバイル対応：画面が狭いときは縦メニューに */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00bcd4;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-menu {
+    display: flex;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+  }
+
+  .nav-menu li {
+    margin: 15px 0;
+  }
+}
+
+
 /* お知らせリスト */
 ul {
   list-style: none;
