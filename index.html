@@ -4,16 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="諏訪市、岡谷市、茅野市、辰野町など諏訪地域の社会人吹奏楽団体『諏訪市民吹奏楽団』の公式サイトです。" />
-  <meta name="keywords" content="吹奏楽, 諏訪市, 音楽, コンサート, 市民吹奏楽団" />
   <title>諏訪市民吹奏楽団（すわしすい）</title>
   <link rel="stylesheet" href="index.css" />
 </head>
 <body>
   <header>
-    <img src="gazou/logo_mou.gif" alt="諏訪市民吹奏楽団ロゴ" /> <!--リンクにロゴマーク-->  
-    <nav id="site-navigation">
-      <button class="menu-toggle" aria-label="メニューを開く">☰</button>
-      <ul id="menu-mainnav">
+    <img src="gazou/logo_mou.gif" alt="諏訪市民吹奏楽団ロゴ" />
+    <nav>
+      <ul>
         <li><a href="shokai_sample.html">団紹介</a></li>
         <li><a href="sindai_sample.html">団員募集</a></li>
         <li><a href="http://cornettist.music.coocan.jp/history.html">演奏記録</a></li>
@@ -48,14 +46,5 @@
   <footer>
     <p>このページはリンクフリーです。<br>リンクされた場合はメールでお知らせいただけると嬉しいです。</p>
   </footer>
-
-  <script>
-    // メニューのトグル機能
-    const menuToggle = document.querySelector('.menu-toggle');
-    const menu = document.getElementById('menu-mainnav');
-    menuToggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
-    });
-  </script>
 </body>
 </html>
