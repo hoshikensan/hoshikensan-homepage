@@ -1,0 +1,75 @@
+body {
+    font-family: 'Yu Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fffdf8;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #f5c9c9;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  h1, h2 {
+    margin: 0.5em 0;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  main {
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li::before {
+    content: "✔️ ";
+    margin-right: 0.5em;
+  }
+  
+  a {
+    color: #cc4444;
+    text-decoration: underline;
+  }
+  
+  .info-table {
+    margin: 2em 0;
+  }
+  
+  .info-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1em;
+    background: #fdf9f5;
+  }
+  
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+  }
+
+  .back-link {
+    text-align: center;
+    margin-top: 2em;
+  }
+  
+  
+  footer {
+    background: #eee;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  

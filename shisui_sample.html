@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="諏訪市、岡谷市、茅野市、辰野町など諏訪地域の社会人吹奏楽団体『諏訪市民吹奏楽団』の公式サイトです。" />
+  <meta name="keywords" content="吹奏楽, 諏訪市, 音楽, コンサート, 市民吹奏楽団" />
+  <title>諏訪市民吹奏楽団（すわしすい）</title>
+  <link rel="stylesheet" href="shisui_sample.css" />
+</head>
+<body>
+  <header>
+    <img src="gazou/logo_mou.gif" alt="諏訪市民吹奏楽団ロゴ" />
+    <nav id="site-navigation">
+      <button class="menu-toggle" aria-label="メニューを開く">☰</button>
+      <ul id="menu-mainnav">
+        <li><a href="shokai_sample.html">団紹介</a></li>
+        <li><a href="sindai_sample.html">団員募集</a></li>
+        <li><a href="http://cornettist.music.coocan.jp/history.html">演奏記録</a></li>
+        <li><a href="http://cornettist.music.coocan.jp/concert.html">コンサート情報</a></li>
+        <li><a href="gara_sample.html">市吹フォトギャラリー</a></li>
+        <li><a href="http://cornettist.music.coocan.jp/gallery.html">市吹メディア・ギャラリー</a></li>
+        <li><a href="link_sample.html">リンク集</a></li>
+        <li><a href="https://www.facebook.com/SuwaCityWindBand">Facebook</a></li>
+        <li><a href="https://www.instagram.com/suwacitywindband/">Instagram</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="news">
+      <h2>お知らせ</h2>
+      <ul>
+        <li>📢 <strong>Facebookを始めました。</strong><br>最新情報を随時更新しています。</li>
+        <li>🎷 <strong>新入団員募集中！</strong><br>特にホルン、パーカッション急募！<a href="bosyuu_sample.html">詳しくはこちら</a></li>
+      </ul>
+    </section>
+
+    <section class="media">
+      <img src="gazou/anime.gif" alt="演奏シーンアニメーション" />
+    </section>
+
+    <section class="contact">
+      <p>📩 お問い合わせ: <a href="mailto:info@scwb.net">info@scwb.net</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>このページはリンクフリーです。<br>リンクされた場合はメールでお知らせいただけると嬉しいです。</p>
+  </footer>
+
+  <script>
+    // メニューのトグル機能
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('menu-mainnav');
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

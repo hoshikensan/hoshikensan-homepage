@@ -1,0 +1,138 @@
+/* 全体的なレイアウトと背景 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* ヘッダー */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header img {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+#site-navigation {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+#menu-mainnav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#menu-mainnav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#menu-mainnav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#menu-mainnav a:hover {
+  background-color: #555;
+  text-decoration: underline;
+}
+
+/* セクションのスタイル */
+section {
+  background-color: white;
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* セクションごとの区切り */
+section:not(.contact) {
+  border-top: 4px solid #333;
+  margin-top: 40px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* お知らせのリスト */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* メディアセクションの画像 */
+.media img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}
+
+/* フッター */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  #menu-mainnav {
+    display: none;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background-color: #444;
+  }
+
+  #menu-mainnav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .menu-toggle.active {
+    background-color: #666;
+  }
+}
