@@ -1,7 +1,7 @@
 /* 全体的なレイアウトと背景 */
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: #f7f7f7;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -9,17 +9,17 @@ body {
 
 /* ヘッダー */
 header {
-  background-color: #2e3a59;
+  background-color: #00bcd4; /* 明るいターコイズブルー */
   color: white;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header img {
   max-width: 150px;
   display: block;
-  margin: 0 auto 20px;
+  margin: 0 auto 15px;
 }
 
 header nav ul {
@@ -37,11 +37,12 @@ header nav ul li a {
   color: white;
   font-size: 18px;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 header nav ul li a:hover {
-  color: #f0a500;
+  color: #ff4081; /* 明るいピンク */
+  transform: scale(1.1);
 }
 
 /* メインセクション */
@@ -53,19 +54,20 @@ main {
 
 /* セクションのスタイル */
 section {
-  background-color: white;
+  background-color: #f8f8f8; /* 明るいグレー */
   margin-bottom: 30px;
   padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 section h2 {
   font-size: 28px;
   color: #333;
   margin-bottom: 20px;
-  border-bottom: 2px solid #f0a500;
+  border-bottom: 2px solid #ff4081; /* 明るいピンク */
   padding-bottom: 10px;
+  text-align: left;
 }
 
 /* お知らせリスト */
@@ -81,7 +83,7 @@ ul li {
 }
 
 ul li strong {
-  color: #2e3a59;
+  color: #333;
 }
 
 /* メディアセクション */
@@ -89,8 +91,8 @@ ul li strong {
   width: 100%;
   height: auto;
   margin-top: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 /* お問い合わせセクション */
@@ -100,8 +102,9 @@ ul li strong {
 }
 
 .contact a {
-  color: #f0a500;
+  color: #00bcd4; /* 明るいターコイズブルー */
   text-decoration: none;
+  font-weight: bold;
 }
 
 .contact a:hover {
@@ -110,7 +113,7 @@ ul li strong {
 
 /* フッター */
 footer {
-  background-color: #2e3a59;
+  background-color: #333;
   color: white;
   text-align: center;
   padding: 20px;
@@ -118,12 +121,12 @@ footer {
 }
 
 footer a {
-  color: #ddd;
+  color: #00bcd4; /* 明るいターコイズブルー */
   text-decoration: none;
 }
 
 footer a:hover {
-  color: #f0a500;
+  color: #ff4081; /* 明るいピンク */
 }
 
 /* レスポンシブデザイン */
